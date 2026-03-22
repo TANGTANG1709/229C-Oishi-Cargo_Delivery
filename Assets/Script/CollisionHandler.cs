@@ -17,6 +17,10 @@ public class CollisionHandler : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Rock"))
         {
+            //  ลบหินออกจากฉาก
+            Destroy(collision.gameObject);
+
+            //  ลดหัวใจ
             currentHearts--;
 
             uiManager.UpdateHearts(currentHearts);
