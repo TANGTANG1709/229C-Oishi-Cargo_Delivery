@@ -3,13 +3,11 @@ using UnityEngine.UI;
 
 public class GameUIManager : MonoBehaviour
 {
-    public Text massText;
-    public Text accelText;
-    public Text forceText;
     public Text timeText;
     public Text distanceText;
     public Text heartsText;
 
+    public GameObject winPanel;
     public Transform player;
     private Vector3 startPos;
 
@@ -30,15 +28,20 @@ public class GameUIManager : MonoBehaviour
         distanceText.text = "Distance: " + distance.ToString("F1") + " m";
     }
 
-    public void UpdatePhysics(float mass, float accel, float force)
-    {
-        massText.text = "MASS: " + mass + " kg";
-        accelText.text = "ACCEL: " + accel;
-        forceText.text = "FORCE: " + force + " N";
-    }
+
 
     public void UpdateHearts(int hearts)
     {
-        heartsText.text = "❤️: " + hearts;
+        if (heartsText != null)
+            heartsText.text = "❤️: " + hearts;
+    }
+
+
+
+    public void ShowWin()
+    {
+        if (winPanel != null)
+            winPanel.SetActive(true);
     }
 }
+

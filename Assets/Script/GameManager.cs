@@ -38,6 +38,6 @@ public class GameManager : MonoBehaviour
 
         float force = truck.mass * truck.acceleration;
 
-        uiManager.UpdatePhysics(truck.mass, truck.acceleration, force);
+        
     }
 }
