@@ -11,6 +11,9 @@ public class TruckController : MonoBehaviour
 
     private float force;
 
+    [Header("Advanced Physics")]
+    public float airResistance = 0.5f;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -27,27 +30,30 @@ public class TruckController : MonoBehaviour
     void FixedUpdate()
     {
         Move();
+        ApplyAirResistance();
     }
 
     void Move()
     {
         float move = 0f;
-
-        if (Input.GetKey(KeyCode.W))
-            move = 1f;
-
-        if (Input.GetKey(KeyCode.S))
-            move = -1f;
+        if (Input.GetKey(KeyCode.W)) move = 1f;
+        if (Input.GetKey(KeyCode.S)) move = -1f;
 
         float turn = Input.GetAxis("Horizontal");
 
-        // 🔥 คำนวณแรง
-        force = mass * acceleration;
+        
+        float calculatedForce = mass * acceleration;
 
-        // 🔥 ใช้ ForceMode.Acceleration จะนิ่งกว่า
-        rb.AddForce(transform.forward * move * acceleration, ForceMode.Acceleration);
+        
+        rb.AddForce(transform.forward * move * calculatedForce, ForceMode.Force);
 
-        // 🔥 หมุน
+        
         transform.Rotate(Vector3.up * turn * turnSpeed * Time.fixedDeltaTime);
+    }
+
+    void ApplyAirResistance()
+    {
+        Vector3 airDrag = -rb.linearVelocity * airResistance;
+        rb.AddForce(airDrag);
     }
 }
