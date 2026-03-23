@@ -308,6 +308,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -315,6 +319,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 437696056}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 705206527}
     - targetCorrespondingSourceObject: {fileID: 3397263654568911298, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1334942618}
@@ -392,6 +399,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -399,6 +410,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 839679278}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 839679280}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &28096939 stripped
 Transform:
@@ -671,6 +685,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -678,6 +696,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1366713496}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1366713498}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &110965510 stripped
 Transform:
@@ -752,6 +773,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -759,6 +784,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1100496755}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1100496757}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &111333823 stripped
 Transform:
@@ -833,6 +861,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -840,6 +872,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2055406370}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2055406372}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &133784739 stripped
 Transform:
@@ -1033,6 +1068,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1040,6 +1079,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 364267807}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 364267809}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &163898738 stripped
 Transform:
@@ -1114,6 +1156,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1121,6 +1167,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 887256815}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 887256817}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &178819835 stripped
 Transform:
@@ -1427,6 +1476,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1434,6 +1487,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1627456882}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1627456884}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &278093897 stripped
 Transform:
@@ -1508,6 +1564,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1515,6 +1575,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 323006212}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 323006214}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &279170726 stripped
 Transform:
@@ -1739,6 +1802,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1746,6 +1813,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 302668150}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 302668152}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &302668148 stripped
 Transform:
@@ -1767,6 +1837,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &302668152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269972417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &306386243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1866,6 +1949,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &323006214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323006210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,6 +2193,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &364267809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364267805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &368319891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2165,6 +2274,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2172,6 +2285,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 368319894}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 368319896}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &368319892 stripped
 Transform:
@@ -2193,6 +2309,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &368319896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257944389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &398883522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2261,6 +2390,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2268,6 +2401,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1678838635}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1678838637}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &398883523 stripped
 Transform:
@@ -2584,6 +2720,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: ecce7ea6310109a41893cf983ff357bb, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -2437626242770778623, guid: ecce7ea6310109a41893cf983ff357bb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -2732,6 +2872,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2739,6 +2883,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1907259282}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1907259284}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &605550675 stripped
 Transform:
@@ -2818,6 +2965,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2825,6 +2976,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 635031624}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 635031626}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &635031622 stripped
 Transform:
@@ -2846,6 +3000,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &635031626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621898623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &690698379 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
@@ -2963,6 +3130,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 703016587}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &705206525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+  m_PrefabInstance: {fileID: 16970565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &705206527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705206525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &722328295 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
@@ -3110,6 +3295,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3117,6 +3306,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1388931594}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1388931596}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &801334434 stripped
 Transform:
@@ -3196,6 +3388,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3203,6 +3399,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 828188957}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 828188959}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &828188955 stripped
 Transform:
@@ -3224,6 +3423,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &828188959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141483836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3293,6 +3505,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &839679280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839679276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &852475793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3361,6 +3586,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3368,6 +3597,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 852475796}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 852475798}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &852475794 stripped
 Transform:
@@ -3389,6 +3621,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &852475798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226670221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &856097048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3507,6 +3752,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &887256817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887256813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &892296266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3601,6 +3859,40 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &951316651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951316643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
+--- !u!65 &951316652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951316643}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9651299, y: 1.8372779, z: 1.9312072}
+  m_Center: {x: 0.021510363, y: -0.019947201, z: -0.007766366}
 --- !u!1 &977141942
 GameObject:
   m_ObjectHideFlags: 0
@@ -3750,6 +4042,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3757,6 +4053,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1782400353}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1782400355}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &1057300154 stripped
 Transform:
@@ -3831,6 +4130,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3838,6 +4141,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1099162586}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1099162588}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &1099162584 stripped
 Transform:
@@ -3859,6 +4165,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1099162588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722328295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &1100496753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
@@ -3879,6 +4198,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1100496757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100496753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &1118200276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3947,6 +4279,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3954,6 +4290,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2050233981}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2050233983}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &1118200277 stripped
 Transform:
@@ -4364,6 +4703,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4371,6 +4714,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1957653078}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1957653080}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &1213443283 stripped
 Transform:
@@ -4603,6 +4949,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4610,6 +4960,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1568030668}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1568030670}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &1322296535 stripped
 Transform:
@@ -4715,6 +5068,51 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!1 &1352227984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1352227986}
+  - component: {fileID: 1352227985}
+  m_Layer: 0
+  m_Name: PauseMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1352227985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352227984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a337a3aac32b047b402d093a7b04bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
+  pauseMenuUI: {fileID: 0}
+--- !u!4 &1352227986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352227984}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.9, y: 6.1453, z: 232.82494}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1366713494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
@@ -4735,6 +5133,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1366713498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366713494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &1370397014
 GameObject:
   m_ObjectHideFlags: 0
@@ -4801,6 +5212,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1388931596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388931592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &1389841872
 GameObject:
   m_ObjectHideFlags: 0
@@ -5143,6 +5567,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5150,6 +5578,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1541746887}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1541746889}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &1541746885 stripped
 Transform:
@@ -5171,6 +5602,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1541746889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58462819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &1558456424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5358,6 +5802,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1568030670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568030666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &1605669815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5426,6 +5883,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5433,6 +5894,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1605669818}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1605669820}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &1605669816 stripped
 Transform:
@@ -5454,6 +5918,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1605669820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226003990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &1622724573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5553,6 +6030,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1627456884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627456880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &1651792514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5621,6 +6111,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5628,6 +6122,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1651792517}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1651792519}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &1651792515 stripped
 Transform:
@@ -5649,6 +6146,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1651792519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499860321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &1678838633 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
@@ -5669,6 +6179,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1678838637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678838633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &1708923697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5763,6 +6286,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1782400355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782400351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &1783149794
 GameObject:
   m_ObjectHideFlags: 0
@@ -5861,6 +6397,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5952,6 +6496,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3397263654568911298, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 951316647}
+    - targetCorrespondingSourceObject: {fileID: 3397263654568911298, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 951316651}
+    - targetCorrespondingSourceObject: {fileID: 3397263654568911298, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 951316652}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &1858516866 stripped
 Transform:
@@ -6026,6 +6576,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6033,6 +6587,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1864602512}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1864602514}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &1864602510 stripped
 Transform:
@@ -6054,6 +6611,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1864602514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690698379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &1872353291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6158,6 +6728,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1907259284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907259280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &1957653076 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
@@ -6178,6 +6761,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1957653080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957653076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1001 &1978729635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6246,6 +6842,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6253,6 +6853,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1978729638}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1978729640}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &1978729636 stripped
 Transform:
@@ -6274,6 +6877,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &1978729640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889709469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &1985165563
 GameObject:
   m_ObjectHideFlags: 0
@@ -6605,6 +7221,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6587832596825100517, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6612,6 +7232,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2017062444}
+    - targetCorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2017062446}
   m_SourcePrefab: {fileID: 100100000, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
 --- !u!4 &2017062442 stripped
 Transform:
@@ -6633,6 +7256,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &2017062446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816924857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &2032520826 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: ecce7ea6310109a41893cf983ff357bb, type: 3}
@@ -6663,7 +7299,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!65 &2032520830
 BoxCollider:
@@ -6699,7 +7335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TruckController
   rb: {fileID: 2032520829}
-  acceleration: 2.5
+  acceleration: 20
   mass: 200
   turnSpeed: 100
 --- !u!4 &2032520832 stripped
@@ -6720,7 +7356,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionHandler
   maxHearts: 3
-  uiManager: {fileID: 1522508808}
 --- !u!1 &2038264166
 GameObject:
   m_ObjectHideFlags: 0
@@ -6820,6 +7455,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &2050233983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050233979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &2055406368 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5956092605817133339, guid: aaad3070504e85545aded1fb6cff7c0f, type: 3}
@@ -6840,6 +7488,19 @@ MonoBehaviour:
   rotationSpeed: 50
   bobbingSpeed: 2
   bobbingHeight: 0.5
+--- !u!114 &2055406372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055406368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6f294b169c9934ea944d119f28114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RockDamage
+  damage: 1
 --- !u!1 &2090229283
 GameObject:
   m_ObjectHideFlags: 0
@@ -7152,3 +7813,4 @@ SceneRoots:
   - {fileID: 1327042927}
   - {fileID: 1783149795}
   - {fileID: 2090229286}
+  - {fileID: 1352227986}

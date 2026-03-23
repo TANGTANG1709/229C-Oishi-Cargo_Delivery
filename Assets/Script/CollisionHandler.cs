@@ -5,30 +5,20 @@ public class CollisionHandler : MonoBehaviour
     public int maxHearts = 3;
     private int currentHearts;
 
-    public GameUIManager uiManager;
-
     void Start()
     {
         currentHearts = maxHearts;
-        uiManager.UpdateHearts(currentHearts);
     }
 
-    void OnCollisionEnter(Collision collision)
+    public void TakeDamage(int damage)
     {
-        if (collision.gameObject.CompareTag("Rock"))
+        currentHearts -= damage;
+
+        Debug.Log("HP: " + currentHearts);
+
+        if (currentHearts <= 0)
         {
-            //  ลบหินออกจากฉาก
-            Destroy(collision.gameObject);
-
-            //  ลดหัวใจ
-            currentHearts--;
-
-            uiManager.UpdateHearts(currentHearts);
-
-            if (currentHearts <= 0)
-            {
-                GameOver();
-            }
+            GameOver();
         }
     }
 

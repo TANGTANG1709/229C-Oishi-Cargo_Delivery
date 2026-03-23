@@ -1,53 +1,53 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class TruckController : MonoBehaviour
 {
     public Rigidbody rb;
 
-    [Header("Physics")]
     public float acceleration = 10f;
     public float mass = 200f;
+    public float turnSpeed = 90f;
+
     private float force;
 
-    [Header("Movement")]
-    public float turnSpeed = 100f;
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     void Start()
     {
         rb.mass = mass;
+
+        // กันรถคว่ำ
+        rb.centerOfMass = new Vector3(0, -0.8f, 0);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Move();
-        UpdateForce();
     }
 
     void Move()
     {
-        float move = Input.GetKey(KeyCode.W) ? 1f : 0f;
-        float turn = 0f;
+        float move = 0f;
 
-        if (Input.GetKey(KeyCode.A)) turn = -1f;
-        if (Input.GetKey(KeyCode.D)) turn = 1f;
+        if (Input.GetKey(KeyCode.W))
+            move = 1f;
 
-        // คำนวณแรง F = ma
+        if (Input.GetKey(KeyCode.S))
+            move = -1f;
+
+        float turn = Input.GetAxis("Horizontal");
+
+        // 🔥 คำนวณแรง
         force = mass * acceleration;
 
-        // เดินหน้า
-        rb.AddForce(transform.forward * move * force);
+        // 🔥 ใช้ ForceMode.Acceleration จะนิ่งกว่า
+        rb.AddForce(transform.forward * move * acceleration, ForceMode.Acceleration);
 
-        // หมุน
-        transform.Rotate(Vector3.up * turn * turnSpeed * Time.deltaTime);
-    }
-
-    void UpdateForce()
-    {
-        force = mass * acceleration;
-    }
-
-    public float GetForce()
-    {
-        return force;
+        // 🔥 หมุน
+        transform.Rotate(Vector3.up * turn * turnSpeed * Time.fixedDeltaTime);
     }
 }
