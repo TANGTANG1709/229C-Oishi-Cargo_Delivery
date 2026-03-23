@@ -5,39 +5,29 @@ public class GameManager : MonoBehaviour
     public TruckController truck;
     public GameUIManager uiManager;
 
-    public enum Difficulty
-    {
-        Easy,
-        Medium,
-        Hard
-    }
-
-    public Difficulty difficulty;
-
     void Start()
     {
-        SetDifficulty(difficulty);
-    }
+     
+        int diff = GameSettings.difficultyLevel;
 
-    public void SetDifficulty(Difficulty diff)
-    {
-        switch (diff)
+
+        if (diff == 0) 
         {
-            case Difficulty.Easy:
-                truck.mass = 100f;
-                break;
-
-            case Difficulty.Medium:
-                truck.mass = 200f;
-                break;
-
-            case Difficulty.Hard:
-                truck.mass = 300f;
-                break;
+            truck.mass = 100f;
+            Debug.Log("เริ่มเกมด้วยโหมด: EASY");
+        }
+        else if (diff == 1) 
+        {
+            truck.mass = 200f;
+            Debug.Log("เริ่มเกมด้วยโหมด: NORMAL");
+        }
+        else if (diff == 2) 
+        {
+            truck.mass = 300f;
+            Debug.Log("เริ่มเกมด้วยโหมด: HARD");
         }
 
-        float force = truck.mass * truck.acceleration;
-
-        
+    
+        truck.rb.mass = truck.mass;
     }
 }
