@@ -14,6 +14,10 @@ public class TruckController : MonoBehaviour
     [Header("Advanced Physics")]
     public float airResistance = 0.5f;
 
+    // 🔥 เพิ่ม (เก็บค่าเดิมไว้)
+    private float normalAcceleration;
+    private float normalTurnSpeed;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -25,6 +29,10 @@ public class TruckController : MonoBehaviour
 
         // กันรถคว่ำ
         rb.centerOfMass = new Vector3(0, -0.8f, 0);
+
+        // 🔥 เพิ่ม (จำค่าเดิม)
+        normalAcceleration = acceleration;
+        normalTurnSpeed = turnSpeed;
     }
 
     void FixedUpdate()
@@ -41,19 +49,17 @@ public class TruckController : MonoBehaviour
 
         float turn = Input.GetAxis("Horizontal");
 
-        
         float calculatedForce = mass * acceleration;
 
-        
         rb.AddForce(transform.forward * move * calculatedForce, ForceMode.Force);
 
-        
         transform.Rotate(Vector3.up * turn * turnSpeed * Time.fixedDeltaTime);
     }
 
     void ApplyAirResistance()
     {
-        Vector3 airDrag = -rb.linearVelocity * airResistance;
+        // 🔥 แก้เล็กน้อย (linearVelocity → velocity)
+        Vector3 airDrag = -rb.velocity * airResistance;
         rb.AddForce(airDrag);
     }
 }
