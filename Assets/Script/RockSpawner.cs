@@ -2,14 +2,23 @@ using UnityEngine;
 
 public class RockSpawner : MonoBehaviour
 {
-    [Header("ตั้งค่าหิน (ลาก Prefab หินมาใส่ตรงนี้)")]
+    [Header("Prefab หิน")]
     public GameObject rockPrefab;
 
-    [Header("ขนาดพื้นที่สุ่มเกิด (กว้าง x สูง x ลึก)")]
+    [Header("พื้นที่สุ่มเกิด (กว้าง x สูง x ลึก)")]
     public Vector3 spawnAreaSize = new Vector3(20f, 0f, 100f);
 
-    [Header("ระยะห่างระหว่างหิน (ป้องกันการเกิดทับกัน)")]
-    public float rockSpacing = 3f; // ปรับค่านี้ให้ใหญ่กว่าขนาดหินนิดหน่อย
+    [Header("ระยะห่างระหว่างหิน")]
+    public float rockSpacing = 3f;
+
+    [Header("Layer ของหิน (ตั้งค่าให้ Rock Prefab เป็น layer นี้)")]
+    public LayerMask rockLayer;
+
+    [Header("ความสูงตอนยิง Raycast")]
+    public float rayStartHeight = 50f;
+
+    [Header("ความสูงลอยจากพื้น")]
+    public float spawnOffsetY = 3f;
 
     private int rockCount = 10;
 
@@ -17,9 +26,9 @@ public class RockSpawner : MonoBehaviour
     {
         int diff = GameSettings.difficultyLevel;
 
-        if (diff == 0) rockCount = 10; // Easy
-        else if (diff == 1) rockCount = 20; // Normal
-        else if (diff == 2) rockCount = 30; // Hard
+        if (diff == 0) rockCount = 10;
+        else if (diff == 1) rockCount = 20;
+        else if (diff == 2) rockCount = 30;
 
         Debug.Log("สุ่มสร้างหินจำนวน: " + rockCount + " ก้อน");
 
@@ -34,33 +43,37 @@ public class RockSpawner : MonoBehaviour
             bool validPosition = false;
             int attempts = 0;
 
-            // สุ่มตำแหน่งใหม่เรื่อยๆ จนกว่าจะเจอที่ว่าง หรือสุ่มเกิน 100 ครั้ง (กันเครื่องค้าง)
             while (!validPosition && attempts < 100)
             {
                 float randomX = Random.Range(-spawnAreaSize.x / 2, spawnAreaSize.x / 2);
                 float randomZ = Random.Range(-spawnAreaSize.z / 2, spawnAreaSize.z / 2);
-                float spawnY = transform.position.y;
 
-                spawnPosition = new Vector3(transform.position.x + randomX, spawnY, transform.position.z + randomZ);
+                // ยิง Ray ลงหาพื้น
+                Vector3 rayStart = new Vector3(transform.position.x + randomX, rayStartHeight, transform.position.z + randomZ);
 
-                // 🌟 หัวใจสำคัญ: เช็คว่าในรัศมี rockSpacing มี Collider อะไรอยู่ไหม
-                // ถ้าไม่มี (!Physics.CheckSphere) แปลว่าตำแหน่งนี้ว่าง ให้ validPosition = true เพื่อหลุดลูป
-                if (!Physics.CheckSphere(spawnPosition, rockSpacing))
+                RaycastHit hit;
+
+                if (Physics.Raycast(rayStart, Vector3.down, out hit, 100f))
                 {
-                    validPosition = true;
+                    spawnPosition = hit.point + Vector3.up * spawnOffsetY;
+
+                    // เช็คเฉพาะหิน ไม่เช็คพื้น
+                    if (!Physics.CheckSphere(spawnPosition, rockSpacing, rockLayer))
+                    {
+                        validPosition = true;
+                    }
                 }
 
                 attempts++;
             }
 
-            // ถ้าหาที่ว่างได้สำเร็จ ก็สร้างหินเลย
             if (validPosition)
             {
                 Instantiate(rockPrefab, spawnPosition, Quaternion.identity);
             }
             else
             {
-                Debug.LogWarning("พื้นที่แน่นเกินไป สร้างหินไม่ครบจำนวนที่ตั้งไว้!");
+                Debug.LogWarning("พื้นที่แน่นเกินไป สร้างหินไม่ครบ!");
             }
         }
     }
