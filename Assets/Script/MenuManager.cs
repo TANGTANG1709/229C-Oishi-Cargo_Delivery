@@ -19,7 +19,7 @@ public class MenuManager : MonoBehaviour
     public void SelectNormal()
     {
         GameSettings.difficultyLevel = 1;
-        SceneManager.LoadScene("Easy");
+        SceneManager.LoadScene("Normal");
     }
 
     public void SelectHard()
