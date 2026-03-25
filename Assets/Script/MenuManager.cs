@@ -25,7 +25,7 @@ public class MenuManager : MonoBehaviour
     public void SelectHard()
     {
         GameSettings.difficultyLevel = 2;
-        SceneManager.LoadScene("Easy");
+        SceneManager.LoadScene("Hard");
     }
 
     public void QuitGame()
