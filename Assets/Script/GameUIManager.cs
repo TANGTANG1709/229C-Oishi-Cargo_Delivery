@@ -19,6 +19,9 @@ public class GameUIManager : MonoBehaviour
     [Header("เป้าหมาย/ปลายทาง")]
     public Transform destination;
 
+    [Header("UI แพ้เกม")]
+    public GameObject gameOverPanel;
+
     private float timer = 0f;
     private bool isTimerRunning = true;
 
@@ -130,4 +133,35 @@ public class GameUIManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("Credits");
     }
+
+    public void ShowGameOverPanel()
+    {
+        // หยุดจับเวลา
+        isTimerRunning = false;
+
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(true);
+        }
+    }
+
+    public void RestartGame()
+    {
+        
+        Time.timeScale = 1f;
+
+      
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    // ฟังก์ชันสำหรับปุ่ม Main Menu
+    public void LoadMainMenu()
+    {
+      
+        Time.timeScale = 1f;
+
+       
+        SceneManager.LoadScene("Menu");
+    }
+
 }

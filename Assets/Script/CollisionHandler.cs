@@ -2,12 +2,37 @@ using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
 {
-    public int maxHearts = 3;
+    
+    private int maxHearts;
     private int currentHearts;
+
+    [Header("อ้างอิง UI Manager")]
+    public GameUIManager uiManager;
 
     void Start()
     {
+        switch (GameSettings.difficultyLevel)
+        {
+            case 0: 
+                maxHearts = 3;
+                break;
+            case 1:
+                maxHearts = 3;
+                break;
+            case 2: 
+                maxHearts = 2;
+                break;
+            default:
+                maxHearts = 3;
+                break;
+        }
+
         currentHearts = maxHearts;
+
+        if (uiManager != null)
+        {
+            uiManager.UpdateHearts(currentHearts);
+        }
     }
 
     public void TakeDamage(int damage)
@@ -15,6 +40,11 @@ public class CollisionHandler : MonoBehaviour
         currentHearts -= damage;
 
         Debug.Log("HP: " + currentHearts);
+
+        if (uiManager != null)
+        {
+            uiManager.UpdateHearts(currentHearts);
+        }
 
         if (currentHearts <= 0)
         {
@@ -24,7 +54,18 @@ public class CollisionHandler : MonoBehaviour
 
     void GameOver()
     {
-        Time.timeScale = 0f;
         Debug.Log("Game Over");
+
+
+        Time.timeScale = 0f;
+
+    
+        if (uiManager != null)
+        {
+            uiManager.ShowGameOverPanel();
+        }
+
+
+        Destroy(gameObject);
     }
 }
