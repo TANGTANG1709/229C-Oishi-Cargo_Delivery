@@ -1,17 +1,20 @@
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; // ใช้สำหรับ RawImage
 using UnityEngine.SceneManagement;
 using System.Collections;
-using TMPro; // 1. เพิ่ม Library สำหรับใช้งาน TextMeshPro
+using TMPro;
 
 public class GameUIManager : MonoBehaviour
 {
     public Text timeText;
     public Text distanceText;
-    public Text heartsText; // (แนะนำให้เปลี่ยนเป็น TextMeshProUGUI ในอนาคตถ้าหัวใจยังไม่ขึ้นนะครับ)
+
+    [Header("ระบบหัวใจ (UI RawImages)")]
+    // 1. เปลี่ยนเป็น RawImage ให้ตรงกับที่คุณใช้
+    public RawImage[] heartImages;
 
     [Header("UI ระดับความยาก")]
-    public TextMeshProUGUI difficultyText; // 2. ประกาศตัวแปร TextMeshPro สำหรับแสดงความยาก
+    public TextMeshProUGUI difficultyText;
 
     public GameObject winPanel;
     public Transform player;
@@ -27,7 +30,6 @@ public class GameUIManager : MonoBehaviour
 
     void Start()
     {
-        // 3. เรียกใช้ฟังก์ชันอัปเดตระดับความยากตอนเริ่มเกม
         UpdateDifficultyDisplay();
     }
 
@@ -55,40 +57,27 @@ public class GameUIManager : MonoBehaviour
     {
         if (difficultyText == null) return;
 
-        // 🔥 เพิ่มส่วนนี้: ดึงชื่อ Scene ปัจจุบันมาเช็ค
-        // เพื่อรองรับการกด Play จาก Scene โดยตรงเวลาเทสเกม
         string currentScene = SceneManager.GetActiveScene().name;
 
-        if (currentScene == "Easy")
-        {
-            GameSettings.difficultyLevel = 0;
-        }
-        else if (currentScene == "Normal")
-        {
-            GameSettings.difficultyLevel = 1;
-        }
-        else if (currentScene == "Hard")
-        {
-            GameSettings.difficultyLevel = 2;
-        }
+        if (currentScene == "Easy") GameSettings.difficultyLevel = 0;
+        else if (currentScene == "Normal") GameSettings.difficultyLevel = 1;
+        else if (currentScene == "Hard") GameSettings.difficultyLevel = 2;
 
-        // เช็คจาก GameSettings.difficultyLevel เพื่อแสดงผล
         switch (GameSettings.difficultyLevel)
         {
-            case 0: // Easy
+            case 0:
                 difficultyText.text = "Easy (Cargo 100kg)";
                 difficultyText.color = Color.green;
                 break;
-            case 1: // Normal
+            case 1:
                 difficultyText.text = "Normal (Cargo 200kg)";
                 difficultyText.color = Color.yellow;
                 break;
-            case 2: // Hard
+            case 2:
                 difficultyText.text = "Hard (Cargo 300kg)";
                 difficultyText.color = Color.red;
                 break;
             default:
-                // เผื่อไว้กรณีมีค่าแปลกๆ
                 difficultyText.text = "Level: Unknown";
                 difficultyText.color = Color.white;
                 break;
@@ -102,29 +91,40 @@ public class GameUIManager : MonoBehaviour
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    public void UpdateHearts(int hearts)
+    // 2. ปรับให้รับค่าทั้ง "เลือดปัจจุบัน" และ "เลือดสูงสุด"
+    public void UpdateHearts(int currentHearts, int maxHearts)
     {
-        if (heartsText != null)
+        for (int i = 0; i < heartImages.Length; i++)
         {
-            string heartsDisplay = "";
-            for (int i = 0; i < hearts; i++)
+            // ถ้า Index นี้น้อยกว่า Max Hearts แปลว่าเป็นหลอดเลือดที่ใช้งานได้ในด่านนี้
+            if (i < maxHearts)
             {
-               
-                heartsDisplay += "❤️";
+                heartImages[i].gameObject.SetActive(true); // เปิดให้มองเห็นหลอดเลือด
+
+                // เช็คว่าเลือดปัจจุบันยังมีอยู่ไหม
+                if (i < currentHearts)
+                {
+                    heartImages[i].color = Color.white; // สีปกติ (เลือดเต็ม)
+                }
+                else
+                {
+                    // เลือดลดไปแล้ว ให้เปลี่ยนเป็นสีดำโปร่งแสง (หรือสีเทา) จะได้รู้ว่าหลอดว่างเปล่า
+                    heartImages[i].color = new Color(0, 0, 0, 0.5f);
+                }
             }
-            heartsText.text = heartsDisplay;
+            // ถ้าเกิน Max Hearts (เช่น โหมด Hard มีแค่ 2 เลือด ดวงที่ 3 จะเข้าเงื่อนไขนี้)
+            else
+            {
+                heartImages[i].gameObject.SetActive(false); // ซ่อนหลอดเลือดนี้ไปเลย
+            }
         }
     }
 
     public void ShowWin()
     {
         if (!isTimerRunning) return;
-
         isTimerRunning = false;
-
-        if (winPanel != null)
-            winPanel.SetActive(true);
-
+        if (winPanel != null) winPanel.SetActive(true);
         StartCoroutine(WaitAndLoadCreditScene());
     }
 
@@ -136,29 +136,19 @@ public class GameUIManager : MonoBehaviour
 
     public void ShowGameOverPanel()
     {
-        // หยุดจับเวลา
         isTimerRunning = false;
-
-        if (gameOverPanel != null)
-        {
-            gameOverPanel.SetActive(true);
-        }
+        if (gameOverPanel != null) gameOverPanel.SetActive(true);
     }
 
     public void RestartGame()
     {
-        
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void LoadMainMenu()
     {
-      
         Time.timeScale = 1f;
-
-       
         SceneManager.LoadScene("Menu");
     }
-
 }

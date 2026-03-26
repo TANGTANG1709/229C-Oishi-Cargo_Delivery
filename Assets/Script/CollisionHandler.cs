@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
 {
-    
     private int maxHearts;
     private int currentHearts;
 
@@ -13,14 +12,14 @@ public class CollisionHandler : MonoBehaviour
     {
         switch (GameSettings.difficultyLevel)
         {
-            case 0: 
+            case 0:
                 maxHearts = 3;
                 break;
             case 1:
                 maxHearts = 3;
                 break;
-            case 2: 
-                maxHearts = 2;
+            case 2:
+                maxHearts = 2; // Hard โหมดมี 2 เลือด
                 break;
             default:
                 maxHearts = 3;
@@ -31,19 +30,20 @@ public class CollisionHandler : MonoBehaviour
 
         if (uiManager != null)
         {
-            uiManager.UpdateHearts(currentHearts);
+            // ส่งไปทั้งเลือดปัจจุบัน และเลือดสูงสุด
+            uiManager.UpdateHearts(currentHearts, maxHearts);
         }
     }
 
     public void TakeDamage(int damage)
     {
         currentHearts -= damage;
-
         Debug.Log("HP: " + currentHearts);
 
         if (uiManager != null)
         {
-            uiManager.UpdateHearts(currentHearts);
+            // อัปเดต UI เมื่อโดนดาเมจ
+            uiManager.UpdateHearts(currentHearts, maxHearts);
         }
 
         if (currentHearts <= 0)
@@ -55,17 +55,13 @@ public class CollisionHandler : MonoBehaviour
     void GameOver()
     {
         Debug.Log("Game Over");
-
-
         Time.timeScale = 0f;
 
-    
         if (uiManager != null)
         {
             uiManager.ShowGameOverPanel();
         }
 
-
-        Destroy(gameObject);
+        Destroy(gameObject); // ระวังนิดนึงนะครับ ถ้า Destroy ตัวเองไปแล้ว โค้ดอื่นที่อ้างอิง player อาจจะ Error ได้
     }
 }
