@@ -2648,12 +2648,12 @@ Transform:
   m_GameObject: {fileID: 158016448}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.6, y: 4.8, z: -3.3}
+  m_LocalPosition: {x: -11.542, y: 4.8, z: -3.3}
   m_LocalScale: {x: 1, y: 10.099, z: 610.69745}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1389841876}
   - {fileID: 1484080639}
+  - {fileID: 1389841876}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &161787272
@@ -23328,7 +23328,7 @@ Transform:
   m_GameObject: {fileID: 1389841872}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29, y: 0, z: 0}
+  m_LocalPosition: {x: 23.161999, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24593,8 +24593,8 @@ Transform:
   m_GameObject: {fileID: 1484080638}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.57, y: -0.068, z: 0.0306}
-  m_LocalScale: {x: 36.234, y: 0.8945043, z: 0.0016374721}
+  m_LocalPosition: {x: 13.511999, y: -0.068000026, z: 0.0306}
+  m_LocalScale: {x: 36.234, y: 0.89450425, z: 0.0016374721}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158016452}
@@ -32069,7 +32069,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7444554aeff830c46ae209128a70f882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionHandler
-  maxHearts: 3
   uiManager: {fileID: 1522508808}
 --- !u!82 &2032520834
 AudioSource:
@@ -34091,9 +34090,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 410087041}
   - {fileID: 832575519}
+  - {fileID: 158016452}
   - {fileID: 516095776}
   - {fileID: 181544}
-  - {fileID: 158016452}
   - {fileID: 1370397016}
   - {fileID: 1522508809}
   - {fileID: 2013961150}
