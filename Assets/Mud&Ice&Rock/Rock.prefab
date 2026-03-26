@@ -122,6 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RockDamage
   damage: 1
   knockbackForce: 500
+  breakSound: {fileID: 8300000, guid: b975a0b9677017a48bdd6e3154bc78a3, type: 3}
 --- !u!114 &5061422748866351650
 MonoBehaviour:
   m_ObjectHideFlags: 0

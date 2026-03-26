@@ -52,7 +52,24 @@ public class GameUIManager : MonoBehaviour
     {
         if (difficultyText == null) return;
 
-        // เช็คจาก GameSettings.difficultyLevel ที่รับมาจากหน้า Menu (0=Easy, 1=Normal, 2=Hard)
+        // 🔥 เพิ่มส่วนนี้: ดึงชื่อ Scene ปัจจุบันมาเช็ค
+        // เพื่อรองรับการกด Play จาก Scene โดยตรงเวลาเทสเกม
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        if (currentScene == "Easy")
+        {
+            GameSettings.difficultyLevel = 0;
+        }
+        else if (currentScene == "Normal")
+        {
+            GameSettings.difficultyLevel = 1;
+        }
+        else if (currentScene == "Hard")
+        {
+            GameSettings.difficultyLevel = 2;
+        }
+
+        // เช็คจาก GameSettings.difficultyLevel เพื่อแสดงผล
         switch (GameSettings.difficultyLevel)
         {
             case 0: // Easy

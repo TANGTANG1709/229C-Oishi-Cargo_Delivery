@@ -26,9 +26,9 @@ public class RockSpawner : MonoBehaviour
     {
         int diff = GameSettings.difficultyLevel;
 
-        if (diff == 0) rockCount = 10;
-        else if (diff == 1) rockCount = 20;
-        else if (diff == 2) rockCount = 30;
+        if (diff == 0) rockCount = 20;
+        else if (diff == 1) rockCount = 30;
+        else if (diff == 2) rockCount = 50;
 
         Debug.Log("สุ่มสร้างหินจำนวน: " + rockCount + " ก้อน");
 
@@ -48,7 +48,7 @@ public class RockSpawner : MonoBehaviour
                 float randomX = Random.Range(-spawnAreaSize.x / 2, spawnAreaSize.x / 2);
                 float randomZ = Random.Range(-spawnAreaSize.z / 2, spawnAreaSize.z / 2);
 
-                // ยิง Ray ลงหาพื้น
+               
                 Vector3 rayStart = new Vector3(transform.position.x + randomX, rayStartHeight, transform.position.z + randomZ);
 
                 RaycastHit hit;
@@ -57,7 +57,7 @@ public class RockSpawner : MonoBehaviour
                 {
                     spawnPosition = hit.point + Vector3.up * spawnOffsetY;
 
-                    // เช็คเฉพาะหิน ไม่เช็คพื้น
+               
                     if (!Physics.CheckSphere(spawnPosition, rockSpacing, rockLayer))
                     {
                         validPosition = true;
