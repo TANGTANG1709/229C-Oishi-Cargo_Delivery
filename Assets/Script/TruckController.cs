@@ -59,7 +59,7 @@ public class TruckController : MonoBehaviour
     void ApplyAirResistance()
     {
         // 🔥 แก้เล็กน้อย (linearVelocity → velocity)
-        Vector3 airDrag = -rb.velocity * airResistance;
+        Vector3 airDrag = -rb.linearVelocity * airResistance;
         rb.AddForce(airDrag);
     }
 }

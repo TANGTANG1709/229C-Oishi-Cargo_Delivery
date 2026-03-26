@@ -13,8 +13,8 @@ public class IceSurface : MonoBehaviour
 
             if (rb != null)
             {
-                rb.drag = iceDrag;
-                rb.angularDrag = iceAngularDrag;
+                rb.linearDamping = iceDrag;
+                rb.angularDamping = iceAngularDrag;
             }
         }
     }
@@ -27,8 +27,8 @@ public class IceSurface : MonoBehaviour
 
             if (rb != null)
             {
-                rb.drag = 0.5f;         // 🔥 กลับปกติ
-                rb.angularDrag = 5f;
+                rb.linearDamping = 0.5f;         // 🔥 กลับปกติ
+                rb.angularDamping = 5f;
             }
         }
     }

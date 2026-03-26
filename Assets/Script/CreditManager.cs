@@ -18,7 +18,7 @@ public class CreditManager : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
-            Application.Quit(); // ปิดเกมตอน Build จริง
+            Application.Quit();
 #endif
     }
 }

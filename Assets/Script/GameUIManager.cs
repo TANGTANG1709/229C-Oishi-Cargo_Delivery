@@ -1,13 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Collections; 
+using System.Collections;
+using TMPro; // 1. เพิ่ม Library สำหรับใช้งาน TextMeshPro
 
 public class GameUIManager : MonoBehaviour
 {
     public Text timeText;
     public Text distanceText;
-    public Text heartsText;
+    public Text heartsText; // (แนะนำให้เปลี่ยนเป็น TextMeshProUGUI ในอนาคตถ้าหัวใจยังไม่ขึ้นนะครับ)
+
+    [Header("UI ระดับความยาก")]
+    public TextMeshProUGUI difficultyText; // 2. ประกาศตัวแปร TextMeshPro สำหรับแสดงความยาก
 
     public GameObject winPanel;
     public Transform player;
@@ -17,6 +21,12 @@ public class GameUIManager : MonoBehaviour
 
     private float timer = 0f;
     private bool isTimerRunning = true;
+
+    void Start()
+    {
+        // 3. เรียกใช้ฟังก์ชันอัปเดตระดับความยากตอนเริ่มเกม
+        UpdateDifficultyDisplay();
+    }
 
     void Update()
     {
@@ -38,6 +48,33 @@ public class GameUIManager : MonoBehaviour
         }
     }
 
+    void UpdateDifficultyDisplay()
+    {
+        if (difficultyText == null) return;
+
+        // เช็คจาก GameSettings.difficultyLevel ที่รับมาจากหน้า Menu (0=Easy, 1=Normal, 2=Hard)
+        switch (GameSettings.difficultyLevel)
+        {
+            case 0: // Easy
+                difficultyText.text = "Easy (Cargo 100kg)";
+                difficultyText.color = Color.green;
+                break;
+            case 1: // Normal
+                difficultyText.text = "Normal (Cargo 200kg)";
+                difficultyText.color = Color.yellow;
+                break;
+            case 2: // Hard
+                difficultyText.text = "Hard (Cargo 300kg)";
+                difficultyText.color = Color.red;
+                break;
+            default:
+                // เผื่อไว้กรณีมีค่าแปลกๆ
+                difficultyText.text = "Level: Unknown";
+                difficultyText.color = Color.white;
+                break;
+        }
+    }
+
     void UpdateTimerDisplay()
     {
         int minutes = Mathf.FloorToInt(timer / 60F);
@@ -52,6 +89,7 @@ public class GameUIManager : MonoBehaviour
             string heartsDisplay = "";
             for (int i = 0; i < hearts; i++)
             {
+               
                 heartsDisplay += "❤️";
             }
             heartsText.text = heartsDisplay;
@@ -67,17 +105,12 @@ public class GameUIManager : MonoBehaviour
         if (winPanel != null)
             winPanel.SetActive(true);
 
-       
         StartCoroutine(WaitAndLoadCreditScene());
     }
 
-    
     private IEnumerator WaitAndLoadCreditScene()
     {
-      
         yield return new WaitForSeconds(3f);
-
-       
         SceneManager.LoadScene("Credits");
     }
 }

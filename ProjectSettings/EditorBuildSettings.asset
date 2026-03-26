@@ -12,11 +12,23 @@ EditorBuildSettings:
     path: Assets/Scenes/DifficultySelection.unity
     guid: 16c5fed419482e04b924641b5519d00a
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Easy.unity
+    path: Assets/Scenes/game.unity
     guid: 0ef7e63039b01c74989c1cdae3ab195e
+  - enabled: 1
+    path: Assets/Scenes/Easy.unity
+    guid: 947a82d7633dda84ca470948a5b66890
+  - enabled: 1
+    path: Assets/Scenes/Normal.unity
+    guid: 6db531a78633afa45870cff453baaadd
+  - enabled: 1
+    path: Assets/Scenes/Hard.unity
+    guid: ae0c1457dc047f644927997a2c43f005
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 4280084db07cab84ca2707fcab514ef8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
