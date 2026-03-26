@@ -149,12 +149,9 @@ public class GameUIManager : MonoBehaviour
     {
         
         Time.timeScale = 1f;
-
-      
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    // ฟังก์ชันสำหรับปุ่ม Main Menu
     public void LoadMainMenu()
     {
       
