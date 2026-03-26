@@ -1608,10 +1608,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: " Chatpanu phool-oi 1670702685 229C no.15\n                          Level
-    design\n Kanokphit Niyomsuan 160703055 229C no.17 \n                          
-    Programmer\n     Gun Limpanit 1670703121 229C no.18 \n                       
-    Ui Design&Sound"
+  m_text: " Chatpanu phool-oi 1670702685 229C no.15\n                        Level
+    design\n Kanokphit Niyomsuan 160703055 229C no.17 \n                        Ui
+    Design&Sound\n     Gun Limpanit 1670703121 229C no.18 \n                        
+    Programmer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

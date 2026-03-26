@@ -23725,6 +23725,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2638361880095171018, guid: ea8c1fd2df5f9ad478aa9ddb10abb495, type: 3}
   m_PrefabInstance: {fileID: 1422602310}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1422602312 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5054154579845415088, guid: ea8c1fd2df5f9ad478aa9ddb10abb495, type: 3}
+  m_PrefabInstance: {fileID: 1422602310}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
 --- !u!1 &1431578562
 GameObject:
   m_ObjectHideFlags: 0
@@ -25171,7 +25182,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameUIManager
   timeText: {fileID: 98746053}
   distanceText: {fileID: 2038264168}
-  heartImages: []
+  heartImages:
+  - {fileID: 1920182445}
+  - {fileID: 1422602312}
+  - {fileID: 1885226170}
   difficultyText: {fileID: 1649802379}
   winPanel: {fileID: 296650453}
   player: {fileID: 2032520832}
@@ -30025,6 +30039,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d2ea041f4fbd3ea40a612670ccdd6086, type: 3}
   m_PrefabInstance: {fileID: 978097997}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1885226170 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5054154579845415088, guid: ea8c1fd2df5f9ad478aa9ddb10abb495, type: 3}
+  m_PrefabInstance: {fileID: 690591568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
 --- !u!1001 &1895848759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30691,6 +30716,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910175469}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1920182445 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5054154579845415088, guid: ea8c1fd2df5f9ad478aa9ddb10abb495, type: 3}
+  m_PrefabInstance: {fileID: 1480751693}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
 --- !u!4 &1927912548 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ac6310b1931893f47bc4b9202e11ec05, type: 3}
